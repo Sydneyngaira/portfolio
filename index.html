@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 { color: #38bdf8; margin-bottom: 5px; }
+        .subtitle { color: #94a3b8; font-size: 1.1rem; margin-top: 0; }
+        .section { margin-top: 40px; }
+        h2 { border-bottom: 2px solid #334155; padding-bottom: 8px; color: #e2e8f0; }
+        
+        /* Connect Buttons & Widgets */
+        .btn-container { display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .github-btn { background-color: #24292e; color: white; border: 1px solid #444; }
+        .discord-btn { background-color: #5865F2; color: white; }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        
+        .stats-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Info -->
+        <h1>Your Name</h1>
+        <p class="subtitle">Developer & Creator</p>
+        <p>Welcome to my personal workspace. I build projects, track my coding journey on GitHub, and hang out with an awesome community on Discord.</p>
+
+        <!-- Connect Section -->
+        <div class="section">
+            <h2>Connect With Me</h2>
+            <div class="btn-container">
+                <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL URLS -->
+                <a href="https://github.com" target="_blank" class="btn github-btn">View My GitHub</a>
+                <a href="https://discord.gg" target="_blank" class="btn discord-btn">Join My Discord</a>
+            </div>
+        </div>
+
+        <!-- GitHub Integration Section -->
+        <div class="section">
+            <h2>GitHub Snapshot</h2>
+            <div class="stats-card">
+                <!-- Dynamic Github Tracker (Replace YOUR_GITHUB_USERNAME) -->
+                <img src="https://vercel.app" alt="GitHub Stats" style="width:100%; max-width:450px;" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
